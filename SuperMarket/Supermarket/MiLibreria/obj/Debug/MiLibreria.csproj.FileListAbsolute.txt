@@ -1,0 +1,4 @@
+C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\MiLibreria\bin\Debug\MiLibreria.pdb
+C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\MiLibreria\obj\Debug\MiLibreria.csprojResolveAssemblyReference.cache
+C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\MiLibreria\obj\Debug\MiLibreria.dll
+C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\MiLibreria\obj\Debug\MiLibreria.pdb
