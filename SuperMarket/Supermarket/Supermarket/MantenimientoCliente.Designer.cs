@@ -38,21 +38,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnConsultar
             // 
-            this.button1.TabIndex = 3;
+            this.btnConsultar.TabIndex = 3;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
-            // button2
+            // btnGuardar
             // 
-            this.button2.TabIndex = 4;
+            this.btnGuardar.TabIndex = 4;
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.TabIndex = 5;
+            this.btnEliminar.TabIndex = 5;
             // 
-            // button4
+            // btnNuevo
             // 
-            this.button4.TabIndex = 6;
+            this.btnNuevo.TabIndex = 6;
             // 
             // btnSalir
             // 
@@ -94,7 +95,7 @@
             this.textId_Cli.Name = "textId_Cli";
             this.textId_Cli.Size = new System.Drawing.Size(195, 20);
             this.textId_Cli.SoloNumeros = true;
-            this.textId_Cli.TabIndex = 15;
+            this.textId_Cli.TabIndex = 0;
             this.textId_Cli.Validar = true;
             // 
             // textNom_Cli
@@ -103,7 +104,7 @@
             this.textNom_Cli.Name = "textNom_Cli";
             this.textNom_Cli.Size = new System.Drawing.Size(195, 20);
             this.textNom_Cli.SoloNumeros = false;
-            this.textNom_Cli.TabIndex = 16;
+            this.textNom_Cli.TabIndex = 1;
             this.textNom_Cli.Validar = true;
             // 
             // textApellido
@@ -112,7 +113,7 @@
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(195, 20);
             this.textApellido.SoloNumeros = false;
-            this.textApellido.TabIndex = 17;
+            this.textApellido.TabIndex = 2;
             this.textApellido.Validar = true;
             // 
             // MantenimientoCliente
@@ -129,6 +130,10 @@
             this.Name = "MantenimientoCliente";
             this.Text = "MantenimientoCliente";
             this.Controls.SetChildIndex(this.pictureBox2, 0);
+            this.Controls.SetChildIndex(this.btnEliminar, 0);
+            this.Controls.SetChildIndex(this.btnGuardar, 0);
+            this.Controls.SetChildIndex(this.btnConsultar, 0);
+            this.Controls.SetChildIndex(this.btnNuevo, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
@@ -136,10 +141,6 @@
             this.Controls.SetChildIndex(this.textNom_Cli, 0);
             this.Controls.SetChildIndex(this.textApellido, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
-            this.Controls.SetChildIndex(this.button2, 0);
-            this.Controls.SetChildIndex(this.button3, 0);
-            this.Controls.SetChildIndex(this.button4, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

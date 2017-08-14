@@ -337,6 +337,7 @@
             this.txtCodPro.SoloNumeros = false;
             this.txtCodPro.TabIndex = 2;
             this.txtCodPro.Validar = true;
+            this.txtCodPro.TabIndexChanged += new System.EventHandler(this.txtCodPro_TabIndexChanged);
             // 
             // txtCant
             // 

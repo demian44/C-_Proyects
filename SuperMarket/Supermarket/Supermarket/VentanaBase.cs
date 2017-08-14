@@ -20,7 +20,7 @@ namespace Supermarket
         private void btnSalir_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Está seguro que desea salir?", "Aviso!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
-                Application.Exit();
+                this.Close();
         }
         public virtual void Eliminar()
         {

@@ -29,10 +29,15 @@
         private void InitializeComponent()
         {
             this.SuspendLayout();
+            //        
             // 
             // btnBuscar
             // 
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(87, 21);
             // 
             // ConsultarClientes
             // 

@@ -60,11 +60,11 @@ namespace Supermarket
         {
             this.Close();
         }
-
+/*
         private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
+        }*/
 
         private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -135,14 +135,12 @@ namespace Supermarket
         }
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            VentanaLogin VentanaLogin = new VentanaLogin();
-            VentanaLogin.Show();
+            Application.Exit();
         }
 
         private void cerrarAplicaciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }

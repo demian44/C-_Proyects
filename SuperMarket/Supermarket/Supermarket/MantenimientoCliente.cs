@@ -19,6 +19,7 @@ namespace Supermarket
         }
         public override bool Guardar()
         {
+            
             Boolean retorno = false;
             if (Utilidades.ValidarFormulario(this, errorProvider1) == false)
             {
@@ -91,6 +92,19 @@ namespace Supermarket
             return retorno;            
             
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            ConsultarClientes Consultar_Clientes = new ConsultarClientes();
+            Consultar_Clientes.ShowDialog();
+            if (Consultar_Clientes.DialogResult == DialogResult.OK)
+            {
+                textId_Cli.Text = Consultar_Clientes.dataGridView1.Rows[Consultar_Clientes.dataGridView1.CurrentRow.Index].Cells[0].Value.ToString();
+                textNom_Cli.Text = Consultar_Clientes.dataGridView1.Rows[Consultar_Clientes.dataGridView1.CurrentRow.Index].Cells[1].Value.ToString();
+                textApellido.Text = Consultar_Clientes.dataGridView1.Rows[Consultar_Clientes.dataGridView1.CurrentRow.Index].Cells[2].Value.ToString();
+            }
+        }
+
     }
 }
 

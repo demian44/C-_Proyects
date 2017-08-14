@@ -20,12 +20,13 @@ namespace Supermarket
 
         private void Facturacion_Load(object sender, EventArgs e)
         {
+            
             string cmd = "Select * from Usuarios where id_usuario = " + VentanaLogin.codigo;
             lblTotal.Text = "$ 0,00";
             DataSet DS = Utilidades.Ejecutar(cmd);
             lblAtiende.Text = DS.Tables[0].Rows[0]["nombre_usuario"].ToString().Trim();
             txtBoxCliente.Enabled= txtDecripcion.Enabled = txtPrecio.Enabled = false;
-            
+
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -34,7 +35,6 @@ namespace Supermarket
             {
                 if (string.IsNullOrEmpty(txtCodigo.Text.Trim()) == false)
                 {
-                
                     string cmd = string.Format("Select nombre_clientes from Cliente where id_clientes='{0}'", txtCodigo.Text.Trim());
                     DataSet DS = Utilidades.Ejecutar(cmd);
                     txtBoxCliente.Text = DS.Tables[0].Rows[0]["nombre_clientes"].ToString().Trim();
@@ -84,7 +84,6 @@ namespace Supermarket
                 txtDecripcion.Text = Consultar_Productos.dataGridView1.Rows[Consultar_Productos.dataGridView1.CurrentRow.Index].Cells[1].Value.ToString();
                 txtPrecio.Text = Consultar_Productos.dataGridView1.Rows[Consultar_Productos.dataGridView1.CurrentRow.Index].Cells[2].Value.ToString();
                 txtCant.Focus();
-
             }
         }
 
@@ -158,6 +157,22 @@ namespace Supermarket
                 txtCodPro.Clear();
             }
         }
+        private void txtCodPro_TabIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtCodigo.Text.Trim()) == false)
+                {
+
+                    string cmd = "Select * from Articulo where id_producto=" + txtCodPro.Text.Trim();
+                    DataSet DS = Utilidades.Ejecutar(cmd);
+                    txtDecripcion.Text = DS.Tables[0].Rows[0]["nom_producto"].ToString().Trim();
+                    txtPrecio.Text = DS.Tables[0].Rows[0]["precio"].ToString().Trim();
+                    txtPrecio.Focus();
+                }
+            }
+            catch { }
+        }
 
         private void btnColocar_Click(object sender, EventArgs e)
         {
@@ -223,8 +238,6 @@ namespace Supermarket
             txtCant.Clear();
             txtDecripcion.Text = "";
             txtPrecio.Text = "";
-            txtBoxCliente.Clear();
-            txtCodigo.Clear();
         }
 
         private void Facturacion_FormClosed(object sender, FormClosedEventArgs e)

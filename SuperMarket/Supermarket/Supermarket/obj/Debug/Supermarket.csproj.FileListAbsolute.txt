@@ -80,3 +80,5 @@ C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\Super
 C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\Supermarket\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\Supermarket\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\Supermarket\obj\Debug\Supermarket.MantenimientoUsuario.resources
+C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\Supermarket\obj\Debug\Supermarket.ConsultarUsuarios.resources
+C:\Users\DEM\Documents\Visual Studio 2017\Projects\SuperMarket\Supermarket\Supermarket\obj\Debug\Supermarket.CambioContraseña.resources

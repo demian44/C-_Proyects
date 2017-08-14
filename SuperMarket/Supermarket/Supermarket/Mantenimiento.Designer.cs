@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -43,45 +43,45 @@
             // 
             this.btnSalir.Location = new System.Drawing.Point(509, 301);
             // 
-            // button1
+            // btnConsultar
             // 
-            this.button1.Location = new System.Drawing.Point(414, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 29);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Consultar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnConsultar.Location = new System.Drawing.Point(414, 163);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(145, 29);
+            this.btnConsultar.TabIndex = 1;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnGuardar
             // 
-            this.button2.Location = new System.Drawing.Point(414, 198);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnGuardar.Location = new System.Drawing.Point(414, 198);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(145, 29);
+            this.btnGuardar.TabIndex = 2;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.Location = new System.Drawing.Point(414, 233);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 29);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnEliminar.Location = new System.Drawing.Point(414, 233);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(145, 29);
+            this.btnEliminar.TabIndex = 3;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnNuevo
             // 
-            this.button4.Location = new System.Drawing.Point(414, 268);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(145, 29);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Nuevo";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnNuevo.Location = new System.Drawing.Point(414, 268);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(145, 29);
+            this.btnNuevo.TabIndex = 4;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.button4_Click);
             // 
             // errorProvider1
             // 
@@ -90,7 +90,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Supermarket.Properties.Resources.grey_new_seo_05_512;
-            this.pictureBox2.Location = new System.Drawing.Point(22, -9);
+            this.pictureBox2.Location = new System.Drawing.Point(80, -6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(369, 345);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,18 +102,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 332);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Name = "Mantenimiento";
             this.Text = "Mantenimiento";
-            this.Controls.SetChildIndex(this.button1, 0);
-            this.Controls.SetChildIndex(this.button2, 0);
-            this.Controls.SetChildIndex(this.button3, 0);
-            this.Controls.SetChildIndex(this.button4, 0);
             this.Controls.SetChildIndex(this.pictureBox2, 0);
+            this.Controls.SetChildIndex(this.btnConsultar, 0);
+            this.Controls.SetChildIndex(this.btnGuardar, 0);
+            this.Controls.SetChildIndex(this.btnEliminar, 0);
+            this.Controls.SetChildIndex(this.btnNuevo, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -123,10 +123,10 @@
 
         #endregion
 
-        public System.Windows.Forms.Button button1;
-        public System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button button3;
-        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Button btnConsultar;
+        public System.Windows.Forms.Button btnGuardar;
+        public System.Windows.Forms.Button btnEliminar;
+        public System.Windows.Forms.Button btnNuevo;
         public System.Windows.Forms.ErrorProvider errorProvider1;
         public System.Windows.Forms.PictureBox pictureBox2;
     }

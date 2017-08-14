@@ -35,7 +35,32 @@
             this.textNom_Prod = new MiLibreria.ErrorTextBox();
             this.textId_P = new MiLibreria.ErrorTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.TabIndex = 3;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.TabIndex = 4;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.TabIndex = 5;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.TabIndex = 6;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.TabIndex = 7;
             // 
             // label1
             // 
@@ -73,7 +98,7 @@
             this.textPrecio.Name = "textPrecio";
             this.textPrecio.Size = new System.Drawing.Size(195, 20);
             this.textPrecio.SoloNumeros = true;
-            this.textPrecio.TabIndex = 13;
+            this.textPrecio.TabIndex = 2;
             this.textPrecio.Validar = true;
             // 
             // textNom_Prod
@@ -82,7 +107,7 @@
             this.textNom_Prod.Name = "textNom_Prod";
             this.textNom_Prod.Size = new System.Drawing.Size(195, 20);
             this.textNom_Prod.SoloNumeros = false;
-            this.textNom_Prod.TabIndex = 12;
+            this.textNom_Prod.TabIndex = 1;
             this.textNom_Prod.Validar = true;
             // 
             // textId_P
@@ -91,7 +116,7 @@
             this.textId_P.Name = "textId_P";
             this.textId_P.Size = new System.Drawing.Size(195, 20);
             this.textId_P.SoloNumeros = true;
-            this.textId_P.TabIndex = 11;
+            this.textId_P.TabIndex = 0;
             this.textId_P.Validar = true;
             this.textId_P.TextChanged += new System.EventHandler(this.textId_P_TextChanged);
             // 
@@ -108,11 +133,12 @@
             this.Controls.Add(this.label1);
             this.Name = "MantenimientoProducto";
             this.Text = "MantenimientoProducto";
+            this.Controls.SetChildIndex(this.pictureBox2, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
-            this.Controls.SetChildIndex(this.button2, 0);
-            this.Controls.SetChildIndex(this.button3, 0);
-            this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.btnConsultar, 0);
+            this.Controls.SetChildIndex(this.btnGuardar, 0);
+            this.Controls.SetChildIndex(this.btnEliminar, 0);
+            this.Controls.SetChildIndex(this.btnNuevo, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
@@ -120,6 +146,7 @@
             this.Controls.SetChildIndex(this.textNom_Prod, 0);
             this.Controls.SetChildIndex(this.textPrecio, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

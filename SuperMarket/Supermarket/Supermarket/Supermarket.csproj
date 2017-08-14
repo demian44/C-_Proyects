@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CambioContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioContraseña.Designer.cs">
+      <DependentUpon>CambioContraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="ConsultarProductos.Designer.cs">
       <DependentUpon>ConsultarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarUsuarios.Designer.cs">
+      <DependentUpon>ConsultarUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -162,6 +174,9 @@
     <Compile Include="VentanaUser.Designer.cs">
       <DependentUpon>VentanaUser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CambioContraseña.resx">
+      <DependentUpon>CambioContraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consulta.resx">
       <DependentUpon>Consulta.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarProductos.resx">
       <DependentUpon>ConsultarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarUsuarios.resx">
+      <DependentUpon>ConsultarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.cs</DependentUpon>
@@ -245,6 +263,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\grey_new_seo-05-512.png" />
+    <None Include="Resources\Keychain Access.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

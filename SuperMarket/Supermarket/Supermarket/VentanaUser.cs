@@ -40,14 +40,20 @@ namespace Supermarket
         private void button1_Click(object sender, EventArgs e)
         {
             ContenedorPrincipal Contenedor_Principal = new ContenedorPrincipal();
-            Hide();
-            Contenedor_Principal.Show();
+            Contenedor_Principal.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Close();
+            VentanaLogin ventanalogin = new VentanaLogin();
+            ventanalogin.Show();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CambioContraseña cambiarContraseña = new CambioContraseña();
+            cambiarContraseña.ShowDialog();
         }
     }
 }

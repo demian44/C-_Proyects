@@ -30,10 +30,9 @@
         {
             this.btnSeleccionar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnImprimir = new System.Windows.Forms.Button();
             this.Nombre = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,6 +41,7 @@
             this.btnSalir.Location = new System.Drawing.Point(499, 302);
             this.btnSalir.Size = new System.Drawing.Size(69, 26);
             this.btnSalir.TabIndex = 4;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnSeleccionar
             // 
@@ -63,15 +63,6 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Location = new System.Drawing.Point(262, 294);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(222, 26);
-            this.btnImprimir.TabIndex = 3;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            // 
             // Nombre
             // 
             this.Nombre.AutoSize = true;
@@ -82,6 +73,13 @@
             this.Nombre.Size = new System.Drawing.Size(71, 18);
             this.Nombre.TabIndex = 4;
             this.Nombre.Text = "Nombre";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(87, 23);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(407, 20);
+            this.textBox1.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -97,33 +95,25 @@
             this.dataGridView1.Size = new System.Drawing.Size(547, 238);
             this.dataGridView1.TabIndex = 6;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(87, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(407, 20);
-            this.textBox1.TabIndex = 0;
-            // 
             // Consulta
             // 
+            this.AcceptButton = this.btnSeleccionar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 332);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Nombre);
-            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnSeleccionar);
             this.Name = "Consulta";
             this.Text = "Consulta";
-            this.Controls.SetChildIndex(this.btnSalir, 0);
             this.Controls.SetChildIndex(this.btnSeleccionar, 0);
             this.Controls.SetChildIndex(this.btnBuscar, 0);
-            this.Controls.SetChildIndex(this.btnImprimir, 0);
             this.Controls.SetChildIndex(this.Nombre, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
             this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -131,11 +121,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label Nombre;
-        public System.Windows.Forms.DataGridView dataGridView1;
         public System.Windows.Forms.Button btnSeleccionar;
         public System.Windows.Forms.Button btnBuscar;
-        public System.Windows.Forms.Button btnImprimir;
         public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.Label Nombre;
     }
 }

@@ -28,62 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.errorTextBox3 = new MiLibreria.ErrorTextBox();
-            this.errorTextBox2 = new MiLibreria.ErrorTextBox();
-            this.textId_Cli = new MiLibreria.ErrorTextBox();
-            this.errorTextBox1 = new MiLibreria.ErrorTextBox();
+            this.textPass = new MiLibreria.ErrorTextBox();
+            this.textUsuario = new MiLibreria.ErrorTextBox();
+            this.textNombre = new MiLibreria.ErrorTextBox();
+            this.TextId = new MiLibreria.ErrorTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.errorTextBox4 = new MiLibreria.ErrorTextBox();
+            this.textRepPass = new MiLibreria.ErrorTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.errorTextBox5 = new MiLibreria.ErrorTextBox();
+            this.textUrl = new MiLibreria.ErrorTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.radioYes = new System.Windows.Forms.RadioButton();
-            this.radioNot = new System.Windows.Forms.RadioButton();
+            this.radioAdminYes = new System.Windows.Forms.RadioButton();
+            this.radioAdminNot = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // errorTextBox3
+            // btnConsultar
             // 
-            this.errorTextBox3.Location = new System.Drawing.Point(159, 153);
-            this.errorTextBox3.Name = "errorTextBox3";
-            this.errorTextBox3.Size = new System.Drawing.Size(245, 20);
-            this.errorTextBox3.SoloNumeros = true;
-            this.errorTextBox3.TabIndex = 18;
-            this.errorTextBox3.Validar = true;
+            this.btnConsultar.Location = new System.Drawing.Point(413, 159);
+            this.btnConsultar.Size = new System.Drawing.Size(146, 29);
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
-            // errorTextBox2
+            // btnGuardar
             // 
-            this.errorTextBox2.Location = new System.Drawing.Point(159, 111);
-            this.errorTextBox2.Name = "errorTextBox2";
-            this.errorTextBox2.Size = new System.Drawing.Size(245, 20);
-            this.errorTextBox2.SoloNumeros = true;
-            this.errorTextBox2.TabIndex = 17;
-            this.errorTextBox2.Validar = true;
+            this.btnGuardar.Location = new System.Drawing.Point(414, 194);
+            this.btnGuardar.Size = new System.Drawing.Size(89, 29);
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // textId_Cli
+            // btnEliminar
             // 
-            this.textId_Cli.Location = new System.Drawing.Point(159, 70);
-            this.textId_Cli.Name = "textId_Cli";
-            this.textId_Cli.Size = new System.Drawing.Size(245, 20);
-            this.textId_Cli.SoloNumeros = true;
-            this.textId_Cli.TabIndex = 16;
-            this.textId_Cli.Validar = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // errorTextBox1
+            // btnNuevo
             // 
-            this.errorTextBox1.Location = new System.Drawing.Point(159, 30);
-            this.errorTextBox1.Name = "errorTextBox1";
-            this.errorTextBox1.Size = new System.Drawing.Size(67, 20);
-            this.errorTextBox1.SoloNumeros = false;
-            this.errorTextBox1.TabIndex = 6;
-            this.errorTextBox1.Validar = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(513, 302);
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // textPass
+            // 
+            this.textPass.Location = new System.Drawing.Point(159, 153);
+            this.textPass.Name = "textPass";
+            this.textPass.Size = new System.Drawing.Size(245, 20);
+            this.textPass.SoloNumeros = false;
+            this.textPass.TabIndex = 18;
+            this.textPass.Validar = true;
+            // 
+            // textUsuario
+            // 
+            this.textUsuario.Location = new System.Drawing.Point(159, 111);
+            this.textUsuario.Name = "textUsuario";
+            this.textUsuario.Size = new System.Drawing.Size(245, 20);
+            this.textUsuario.SoloNumeros = false;
+            this.textUsuario.TabIndex = 17;
+            this.textUsuario.Validar = true;
+            // 
+            // textNombre
+            // 
+            this.textNombre.Location = new System.Drawing.Point(159, 70);
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(245, 20);
+            this.textNombre.SoloNumeros = false;
+            this.textNombre.TabIndex = 16;
+            this.textNombre.Validar = true;
+            // 
+            // TextId
+            // 
+            this.TextId.Enabled = false;
+            this.TextId.Location = new System.Drawing.Point(159, 30);
+            this.TextId.Name = "TextId";
+            this.TextId.Size = new System.Drawing.Size(67, 20);
+            this.TextId.SoloNumeros = true;
+            this.TextId.TabIndex = 6;
+            this.TextId.Validar = false;
             // 
             // label4
             // 
@@ -135,14 +162,14 @@
             this.label5.TabIndex = 24;
             this.label5.Text = "Rep. Password";
             // 
-            // errorTextBox4
+            // textRepPass
             // 
-            this.errorTextBox4.Location = new System.Drawing.Point(159, 194);
-            this.errorTextBox4.Name = "errorTextBox4";
-            this.errorTextBox4.Size = new System.Drawing.Size(247, 20);
-            this.errorTextBox4.SoloNumeros = true;
-            this.errorTextBox4.TabIndex = 23;
-            this.errorTextBox4.Validar = true;
+            this.textRepPass.Location = new System.Drawing.Point(159, 194);
+            this.textRepPass.Name = "textRepPass";
+            this.textRepPass.Size = new System.Drawing.Size(247, 20);
+            this.textRepPass.SoloNumeros = false;
+            this.textRepPass.TabIndex = 23;
+            this.textRepPass.Validar = true;
             // 
             // label6
             // 
@@ -154,21 +181,22 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "URL";
             // 
-            // errorTextBox5
+            // textUrl
             // 
-            this.errorTextBox5.Location = new System.Drawing.Point(78, 240);
-            this.errorTextBox5.Name = "errorTextBox5";
-            this.errorTextBox5.Size = new System.Drawing.Size(326, 20);
-            this.errorTextBox5.SoloNumeros = true;
-            this.errorTextBox5.TabIndex = 25;
-            this.errorTextBox5.Validar = true;
+            this.textUrl.Location = new System.Drawing.Point(78, 240);
+            this.textUrl.Name = "textUrl";
+            this.textUrl.Size = new System.Drawing.Size(326, 20);
+            this.textUrl.SoloNumeros = false;
+            this.textUrl.TabIndex = 25;
+            this.textUrl.Validar = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pictureBox1.Location = new System.Drawing.Point(414, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(414, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(145, 141);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
@@ -182,72 +210,85 @@
             this.label7.TabIndex = 28;
             this.label7.Text = "Admin Status";
             // 
-            // radioYes
+            // radioAdminYes
             // 
-            this.radioYes.AutoSize = true;
-            this.radioYes.Location = new System.Drawing.Point(159, 281);
-            this.radioYes.Name = "radioYes";
-            this.radioYes.Size = new System.Drawing.Size(34, 17);
-            this.radioYes.TabIndex = 29;
-            this.radioYes.TabStop = true;
-            this.radioYes.Text = "Si";
-            this.radioYes.UseVisualStyleBackColor = true;
+            this.radioAdminYes.AutoSize = true;
+            this.radioAdminYes.Location = new System.Drawing.Point(159, 281);
+            this.radioAdminYes.Name = "radioAdminYes";
+            this.radioAdminYes.Size = new System.Drawing.Size(34, 17);
+            this.radioAdminYes.TabIndex = 29;
+            this.radioAdminYes.Text = "Si";
+            this.radioAdminYes.UseVisualStyleBackColor = true;
             // 
-            // radioNot
+            // radioAdminNot
             // 
-            this.radioNot.AutoSize = true;
-            this.radioNot.Location = new System.Drawing.Point(209, 281);
-            this.radioNot.Name = "radioNot";
-            this.radioNot.Size = new System.Drawing.Size(39, 17);
-            this.radioNot.TabIndex = 30;
-            this.radioNot.TabStop = true;
-            this.radioNot.Text = "No";
-            this.radioNot.UseVisualStyleBackColor = true;
+            this.radioAdminNot.AutoSize = true;
+            this.radioAdminNot.Checked = true;
+            this.radioAdminNot.Location = new System.Drawing.Point(209, 281);
+            this.radioAdminNot.Name = "radioAdminNot";
+            this.radioAdminNot.Size = new System.Drawing.Size(39, 17);
+            this.radioAdminNot.TabIndex = 30;
+            this.radioAdminNot.TabStop = true;
+            this.radioAdminNot.Text = "No";
+            this.radioAdminNot.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(509, 194);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 29);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Editar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MantenimientoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(574, 332);
-            this.Controls.Add(this.radioNot);
-            this.Controls.Add(this.radioYes);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.radioAdminNot);
+            this.Controls.Add(this.radioAdminYes);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.errorTextBox5);
+            this.Controls.Add(this.textUrl);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.errorTextBox4);
+            this.Controls.Add(this.textRepPass);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.errorTextBox3);
-            this.Controls.Add(this.errorTextBox2);
-            this.Controls.Add(this.textId_Cli);
-            this.Controls.Add(this.errorTextBox1);
+            this.Controls.Add(this.textPass);
+            this.Controls.Add(this.textUsuario);
+            this.Controls.Add(this.textNombre);
+            this.Controls.Add(this.TextId);
             this.Name = "MantenimientoUsuario";
             this.Text = "Administración de Usuarios";
+            this.Load += new System.EventHandler(this.MantenimientoUsuario_Load);
             this.Controls.SetChildIndex(this.pictureBox2, 0);
-            this.Controls.SetChildIndex(this.errorTextBox1, 0);
-            this.Controls.SetChildIndex(this.textId_Cli, 0);
-            this.Controls.SetChildIndex(this.errorTextBox2, 0);
-            this.Controls.SetChildIndex(this.errorTextBox3, 0);
+            this.Controls.SetChildIndex(this.TextId, 0);
+            this.Controls.SetChildIndex(this.textNombre, 0);
+            this.Controls.SetChildIndex(this.textUsuario, 0);
+            this.Controls.SetChildIndex(this.textPass, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.label4, 0);
-            this.Controls.SetChildIndex(this.errorTextBox4, 0);
+            this.Controls.SetChildIndex(this.textRepPass, 0);
             this.Controls.SetChildIndex(this.label5, 0);
-            this.Controls.SetChildIndex(this.errorTextBox5, 0);
+            this.Controls.SetChildIndex(this.textUrl, 0);
             this.Controls.SetChildIndex(this.label6, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
-            this.Controls.SetChildIndex(this.button2, 0);
-            this.Controls.SetChildIndex(this.button3, 0);
-            this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.btnConsultar, 0);
+            this.Controls.SetChildIndex(this.btnGuardar, 0);
+            this.Controls.SetChildIndex(this.btnEliminar, 0);
+            this.Controls.SetChildIndex(this.btnNuevo, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
             this.Controls.SetChildIndex(this.label7, 0);
-            this.Controls.SetChildIndex(this.radioYes, 0);
-            this.Controls.SetChildIndex(this.radioNot, 0);
+            this.Controls.SetChildIndex(this.radioAdminYes, 0);
+            this.Controls.SetChildIndex(this.radioAdminNot, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -258,21 +299,22 @@
 
         #endregion
 
-        private MiLibreria.ErrorTextBox errorTextBox3;
-        private MiLibreria.ErrorTextBox errorTextBox2;
-        private MiLibreria.ErrorTextBox textId_Cli;
-        private MiLibreria.ErrorTextBox errorTextBox1;
+        private MiLibreria.ErrorTextBox textPass;
+        private MiLibreria.ErrorTextBox textUsuario;
+        private MiLibreria.ErrorTextBox textNombre;
+        private MiLibreria.ErrorTextBox TextId;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private MiLibreria.ErrorTextBox errorTextBox4;
+        private MiLibreria.ErrorTextBox textRepPass;
         private System.Windows.Forms.Label label6;
-        private MiLibreria.ErrorTextBox errorTextBox5;
+        private MiLibreria.ErrorTextBox textUrl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RadioButton radioYes;
-        private System.Windows.Forms.RadioButton radioNot;
+        private System.Windows.Forms.RadioButton radioAdminYes;
+        private System.Windows.Forms.RadioButton radioAdminNot;
+        private System.Windows.Forms.Button button1;
     }
 }

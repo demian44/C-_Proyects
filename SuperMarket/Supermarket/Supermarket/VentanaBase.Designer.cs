@@ -51,6 +51,7 @@
             this.ClientSize = new System.Drawing.Size(571, 332);
             this.Controls.Add(this.btnSalir);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "VentanaBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VentanaBase";
